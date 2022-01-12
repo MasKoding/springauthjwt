@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Client -> Server: Post  api/auth/signin {username,password}
+Server -> Client: authenticate {username,password} Create JWT String with a secret and return  JwtResponse
+
+
+
+@enduml

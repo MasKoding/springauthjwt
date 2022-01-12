@@ -1,0 +1,15 @@
+server:
+  port: 8085
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/springsecurityDB
+    username: dimas
+    password: dimas
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+app:
+  jwtSecret: bezKoderSecretKey
+  jwtExpirationInMs: 86400000

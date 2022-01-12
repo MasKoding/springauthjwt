@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  springauthrestapicontainer:
+    container_name: springauthrestapicontainer
+    image: postgres:13
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: dimas
+      POSTGRES_USER: dimas
+      POSTGRES_DB: springsecurityDB
